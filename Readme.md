@@ -7,4 +7,5 @@ show variables like '%max_connections%';
 set GLOBAL max_connections = 200;
 
 3、查询连接数量
+
 show processlist;
