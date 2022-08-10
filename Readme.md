@@ -17,3 +17,8 @@ select DATE_FORMAT(时间字段,"%Y-%m-%d") 时间字段,COUNT(*) from 表名 wh
 5、数据库备份
 
 /usr/local/mysql/bin/mysqldump --all-databases -hlocalhost -uroot -p123456 > /root/allbackupfile.sql
+
+
+6、日期减一天
+
+DATE_FORMAT(DATE_SUB(now_time,INTERVAL 1 DAY),'%Y-%m-%d %H:%i:%S')
